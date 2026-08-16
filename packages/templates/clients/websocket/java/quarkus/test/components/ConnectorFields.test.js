@@ -1,5 +1,4 @@
 const path = require('path');
-const React = require('react');
 const { render } = require('@asyncapi/generator-react-sdk');
 
 const { ConnectorFields } = require(path.resolve(__dirname, '..', '..', 'components', 'ConnectorFields.js'));
