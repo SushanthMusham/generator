@@ -1,0 +1,4 @@
+queryParamsWithUserId:
+  - - userId
+    - string
+emptyQueryParams: []
