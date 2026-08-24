@@ -1,12 +1,7 @@
-<<<<<<< Updated upstream
-const path = require('path');
-const { render } = require('@asyncapi/generator-react-sdk');
-=======
 import path from 'path';
 import { render } from '@asyncapi/generator-react-sdk';
 import { Parser, fromFile } from '@asyncapi/parser';
 import { getQueryParams } from '@asyncapi/generator-helpers';
->>>>>>> Stashed changes
 
 import { ConnectorFields } from '../../components/ConnectorFields.js';
 
@@ -23,6 +18,7 @@ describe('ConnectorFields component (Quarkus WebSocket)', () => {
     const queryParamsMap = getQueryParams(channels);
 
     queryParamsArray = queryParamsMap ? Array.from(queryParamsMap.entries()) : [];
+    expect(queryParamsArray.length).toBeGreaterThan(0);
   });
 
   test('no query params (undefined) - snapshot', () => {

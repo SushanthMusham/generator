@@ -1,4 +1,0 @@
-queryParamsWithUserId:
-  - - userId
-    - string
-emptyQueryParams: []
